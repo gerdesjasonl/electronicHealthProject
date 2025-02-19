@@ -70,7 +70,7 @@ const DrLogin = () => {
         </div>
         {/* Submit button for the login form */}
         <div className="form-group">
-          <button className="btn btn-primary" type='submit'>Login</button>
+          <button className="btn btn-primary" type='submit'>Login button</button>
         </div>
       </form>
       {isLoggedIn && ( 
