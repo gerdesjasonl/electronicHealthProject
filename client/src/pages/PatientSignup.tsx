@@ -91,19 +91,10 @@ const PatientSignup = () => {
       
         {/* Submit button for the sign up form */}
         <div className="form-group">
-          <button className="btn btn-primary" type='submit'>Sign Up</button>
+          <button className="custom-btn2" type='submit'>Sign Up</button>
         </div>
       </form>
 
-
-
-       {/*patient signup button*/}
-       <div className="hp-loginlinks">
-        <h4>Not yet enrolled? Signup here:</h4>
-      <Link to="/PatientSignup" className="btn btn-secondary">
-          Patient Signup
-      </Link>
-        </div>     
 
     </div>
     
