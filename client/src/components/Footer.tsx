@@ -12,7 +12,7 @@
 
   const Footer = () => {
     return (
-      <footer className="bg-dark text-white text-center py-3">
+      <footer className="footer text-center">
         <p>&copy; Feb 2025 Family Doctors Connection. All rights reserved.</p>
         </footer>
     );

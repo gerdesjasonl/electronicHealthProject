@@ -49,10 +49,10 @@ const navigate = useNavigate();
       <form className='form login-form' onSubmit={handleSubmit}>
         <h1>Login</h1>
         {/* Username input field */}
-        <div className="form-group">
+        <div className="pform-group">
           <label>Email</label>
           <input 
-            className="form-input"
+            className="pform-input"
             type='email'
             name='email'
             value={loginData.email || ''}
@@ -60,10 +60,10 @@ const navigate = useNavigate();
           />
         </div>
         {/* Password input field */}
-        <div className="form-group">
+        <div className="pform-group">
           <label>Password</label>
           <input 
-            className="form-input"
+            className="pform-input"
             type='password'
             name='password'
             value={loginData.password || ''}
@@ -71,8 +71,8 @@ const navigate = useNavigate();
           />
         </div>
         {/* Submit button for the login form */}
-        <div className="form-group">
-          <button className="btn btn-primary" type='submit'>Login button</button>
+        <div className="pform-group">
+          <button className="btn pbtn-primary" type='submit'>Login</button>
         </div>
       </form>
       {isLoggedIn && ( 
@@ -81,9 +81,9 @@ const navigate = useNavigate();
           <Link to="/PatientProfile" className="btn btn-success">Go to Profile</Link>
         </div>
       )}
-     <div> <h1>Not yet a member? Signup Here</h1>
+     <div> <h6>Not yet a member? Signup Here</h6>
   
-  <Link to="/PatientSignup" className="btn btn-primary">
+  <Link to="/PatientSignup" className="btn pbtn-primary">
   Patient Signup
 </Link>
         </div>

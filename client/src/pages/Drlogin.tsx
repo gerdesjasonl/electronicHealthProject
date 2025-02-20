@@ -84,11 +84,11 @@ const DrLogin = () => {
       {isLoggedIn && ( 
         <div>
           <p>Login successful! Click below to continue:</p>
-          <Link to="/DrProfile" className="btn btn-success">Go to Profile</Link>
+          <Link to="/DrProfile" className="custom-btn btn-success">Go to Profile</Link>
         </div>
       )}
 
-      <div> <h1>Not yet a member? Signup Here</h1>
+      <div> <h6>Not yet a member? Signup Here</h6>
   
   <Link to="/DrSignup" className="btn btn-primary">
   Doctor Signup
