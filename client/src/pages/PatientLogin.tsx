@@ -7,8 +7,12 @@ import { Link, useNavigate } from "react-router-dom";
 const NewPatientLogin = () => {
   // State to manage the login form data
   const [loginData, setLoginData] = useState<PatientLogin>({
+    name: '',
     email: '',
-    password: ''
+    password: '',
+    //! includes image url in new patient login
+    image_url: '',
+    //!
   });
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   // Handle changes in the input fields
@@ -41,7 +45,7 @@ const navigate = useNavigate();
   };
 
   return (
-    <div className='form-container'>
+    <div className='form-container my-5 col-12 col-md-6 mb-4'>
       <form className='form login-form' onSubmit={handleSubmit}>
         <h1>Login</h1>
         {/* Username input field */}

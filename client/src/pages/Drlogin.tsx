@@ -1,6 +1,6 @@
 import { useState, FormEvent, ChangeEvent } from "react";
 import DrAuthService from '../utils/doctorAuth';  // Import the Auth utility for managing authentication state
-import { login } from "../api/authDoctorAPI";  // Import the login function from the API
+import { drLogin } from "../api/authDoctorAPI";  // Import the login function from the API
 // import DoctorAuthService from '../utils/doctorAuth';
 // import PatientAuthService from "../utils/patientAuth";
 import { DoctorLogin } from "../interfaces/DoctorLogin";  
@@ -11,8 +11,12 @@ import { Link, useNavigate } from "react-router-dom";
 const DrLogin = () => {
   // State to manage the login form data
   const [loginData, setLoginData] = useState<DoctorLogin>({
+    name: '',
     email: '',
-    password: ''
+    password: '',
+    //! includes image url in new doctor login
+    image_url: '',
+    //!
   });
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   // Handle changes in the input fields
@@ -29,7 +33,7 @@ const DrLogin = () => {
     e.preventDefault();
     try {
       // Call the login API endpoint with loginData
-      const data = await login(loginData);
+      const data = await drLogin(loginData);
       console.log(data);
       // If login is successful, call Auth.login to store the token in localStorage
       if (data.token) {
@@ -47,7 +51,7 @@ const DrLogin = () => {
   };
 
   return (
-    <div className='form-container'>
+    <div className='form-container my-5 col-12 col-md-6 mb-4'>
       <form className='form login-form' onSubmit={handleSubmit}>
         <h1>Login</h1>
         {/* Username input field */}
@@ -86,7 +90,7 @@ const DrLogin = () => {
 
       <div> <h1>Not yet a member? Signup Here</h1>
   
-  <Link to="/DoctorSignup" className="btn btn-primary">
+  <Link to="/DrSignup" className="btn btn-primary">
   Doctor Signup
 </Link>
         </div>
