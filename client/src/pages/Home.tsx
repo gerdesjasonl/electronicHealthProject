@@ -1,7 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { PatientLogin } from "../interfaces/PatientLogin";
-
+<link rel="stylesheet" href=".css"></link>
 
 
 const Homepage = () => {

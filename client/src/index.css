@@ -33,8 +33,13 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 h1 {
+  color: #ffbd59;
   font-size: 2em;
   margin: 0.67em 0;
+}
+
+p {
+color: black;
 }
 
 /* Grouping content
@@ -1012,12 +1017,21 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #2d3e50;
+  background-color: #004aad;
   color: #d9e9e8;
 }
 
 .btn.btn-primary:hover {
-  background-color: #57779a;
+  background-color: #3b64cc;
+}
+
+.btn.btn-secondary {
+  background-color: #00bf63;
+  color: white;
+}
+
+.btn.btn.btn-secondary:hover {
+  background-color: #308155;
 }
 
 .btn.btn-danger {
