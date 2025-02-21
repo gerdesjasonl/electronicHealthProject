@@ -29,16 +29,16 @@
     5. npm run start (on main)
 
 ## Screenshots / Videos
-![Landing Page Pic](http://electronicHealthProject/assets/pic1.png)
+![Landing Page Pic](/electronicHealthProject/assets/pic1.png)
 This is the Homepage.
 
-![Doctor Profile with OASH API dropdown](http://electronicHealthProject/assets/pic2.png)
+![Doctor Profile with OASH API dropdown](/electronicHealthProject/assets/pic2.png)
 This is Doctor Profile page with OASH API dropdown.
 
-![New Patient Profile creation with Cloudinary image upload](http://electronicHealthProject/assets/pic3.png)
+![New Patient Profile creation with Cloudinary image upload](/electronicHealthProject/assets/pic3.png)
 This is a new Patient Profile creation with Cloudinary image upload.
 
-![Patient Profile page](http://electronicHealthProject/assets/pic4.png)
+![Patient Profile page](/electronicHealthProject/assets/pic4.png)
 This is the new Patient Profile on login.
 
 
